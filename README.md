@@ -34,13 +34,13 @@ The server will be available at http://localhost:3000.
 
 1. **Build the Docker image:**
    ```bash
-   docker build -t your-username/demo-web:1.0.0 .
+   docker build -t your-username/demo-web:1.0.2 .
    ```
    Replace `your-username` with your Docker Hub username and `1.0.0` with the current version.
 
 2. **Run the Docker container:**
    ```bash
-   docker run -p 3000:3000 -d your-username/demo-web:1.0.0
+   docker run -p 3000:3000 -d your-username/demo-web:1.0.2
    ```
    The server will be available at http://localhost:3000.
 
@@ -65,7 +65,7 @@ To push the image to a container registry (e.g., Docker Hub, GCR, ECR), you need
 
 ```bash
 docker login
-docker push your-username/demo-web:1.0.0
+docker push your-username/demo-web:1.0.2
 ```
 
 Replace `your-username` with your registry's username or endpoint.
