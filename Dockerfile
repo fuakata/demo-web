@@ -11,6 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Bundle app source
+COPY VERSION .
 COPY src/ ./src/
 
 # Make port 3000 available to the world outside this container
